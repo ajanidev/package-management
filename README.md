@@ -74,7 +74,7 @@ systemctl enable kubelet
 systemctl start kubelet
 
 # Print success message
-echo "Your script ran successfully"
+echo "Your script ran successfully" > /tmp/script-success.txt
 ```
 ## Exit as root user & execute the below commands as normal ubuntu user
 ```sh
