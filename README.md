@@ -9,6 +9,7 @@
 + Attach Security Group to EC2 Instance/nodes.
 
 ## Assign hostname &  login as ‘root’ user because the following set of commands need to be executed with ‘sudo’ permissions. Note that if running on first launch, an EC2 instance runs scripts in root mode so it's not needed. But if running after launch then you need to switch to root user.
+```sh
 #!/bin/bash
 # Load the necessary module
 modprobe br_netfilter
@@ -75,7 +76,7 @@ systemctl start kubelet
 # Print success message
 echo "Your script ran successfully"
 ```
-## exit as root user & execute the below commands as normal ubuntu user
+## Exit as root user & execute the below commands as normal ubuntu user
 ```sh
 sudo su - ubuntu
 ```
